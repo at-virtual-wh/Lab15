@@ -119,6 +119,54 @@
     font-size: 1em;
   }
 
+    /* Sección de Productos */
+.seccion-productos {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seccion-productos h2 {
+  font-size: 2em;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+.contenido-seccion {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 80%;
+}
+
+.imagen-seccion {
+  width: 80%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.imagen-seccion:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.seccion-productos p {
+  font-size: 1.2em;
+  color: #555;
+  max-width: 600px;
+  margin: 0px auto;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+
   /* Pie de página */
   .pie-pagina {
     background-color: #333;
@@ -166,6 +214,9 @@
     .contenido-pie {
       grid-template-columns: repeat(2, 1fr);
     }
+    .contenido-seccion {
+      flex-direction: column;
+    }
   }
   
   /* Para dispositivos móviles */
@@ -186,53 +237,10 @@
     .menu-navegacion {
       gap: 0.5em;
     }
+    .contenido-seccion {
+      flex-direction: column;
+    }
   }
 
-  /* Sección de Productos */
-.seccion-productos {
-  padding: 50px 20px;
-  background-color: #fff;
-  text-align: center;
-  border-bottom: 1px solid #e0e0e0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.seccion-productos h2 {
-  font-size: 2em;
-  color: #4CAF50;
-  margin-bottom: 20px;
-}
-
-.contenido-seccion {
-  display: flex;
-  align-content: center;
-  align-items: center;
-  gap: 20px;
-  width: 80%;
-}
-
-.imagen-seccion {
-  width: 80%;
-  max-width: 400px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.imagen-seccion:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-}
-
-.seccion-productos p {
-  font-size: 1.2em;
-  color: #555;
-  max-width: 600px;
-  margin: 0px auto;
-  line-height: 1.5;
-  text-align: justify;
-}
 
 
