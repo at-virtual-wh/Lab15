@@ -144,7 +144,7 @@
   /* Media Queries para Responsividad */
 
 /* Para tablets y dispositivos medianos */
-  @media (max-width: 768px) {
+  @media (max-width: 700px) {
     .menu-navegacion {
       flex-direction: column;
       gap: 1em;
